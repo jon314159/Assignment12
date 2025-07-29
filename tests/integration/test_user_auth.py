@@ -1,9 +1,8 @@
 # tests/integration/test_user_auth.py
 
-import pytest
+import pytest # type: ignore
 from uuid import UUID
-import pydantic_core
-from sqlalchemy.exc import IntegrityError
+from sqlalchemy.exc import IntegrityError # type: ignore
 from app.models.user import User
 
 def test_password_hashing(db_session, fake_user_data):
